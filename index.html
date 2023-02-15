@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>==></title>
+    <link rel="stylesheet" href="main.css">
+
+<head>
+
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        
+    var clicks = 0;
+        
+    // ==> click
+    $(function() {
+        $("#send").click(function() {
+            clicks = clicks + 1;
+            
+            if (clicks == 1) {
+                $("#tt1").toggleClass("show");
+            }
+            
+            if (clicks == 2) {
+                $("#tt2").toggleClass("show");
+                $("#dirk1").toggleClass("show"); 
+            }
+            
+            if (clicks == 3) {
+                $("#tt3").toggleClass("show");
+            }
+            
+            if (clicks == 4) {
+                $("#tt4").toggleClass("show");
+                $("#dirk2").toggleClass("show");
+            }
+            
+            if (clicks == 5) {
+                $("#tt5").toggleClass("show");
+                $("#dirk3").toggleClass("show");
+            }
+        });
+    });
+            
+    </script>
+    
+<!-- Dude, stop looking at my shitty code. -->
+
+    <p class="intro">Press ==> to send your message.</p><br>
+    
+    <a id="tt1" class="hide">
+        <div class="tt">
+            <p>TT: …<p>
+        </div>
+    </a>
+    
+    <a id="tt2" class="hide">
+        <div class="tt">
+            <p>TT: What is this?<p>
+            <br>
+        </div>
+    </a>
+    
+    <a id="dirk1" class="hide">
+        <p class="dirk typewriter-line1">I don’t know.</p>
+        <p class="dirk typewriter-line2">You brought us here. You tell me.</p>
+    </a>
+    
+    <a id="tt3" class="hide">
+        <div class="tt">
+            <p>TT: Uh, ok.<p>
+        </div>
+    </a>
+    
+    <a id="tt4" class="hide">
+        <div class="tt">
+            <p>TT: Am I dead?<p>
+            <br>
+        </div>
+    </a>
+    
+    <a id="dirk2" class="hide">
+        <p class="dirk typewriter-line1">Long answer or short answer?</p>
+    </a>
+    
+    <a id="tt5" class="hide">
+        <div class="tt">
+            <p>TT: Depends. How much time do we have?<p>
+            <br>
+        </div>
+    </a>
+    
+    <a id="dirk3" class="hide">
+        <p class="dirk typewriter-line3">You’re not dead and you’re also not alive.</p>
+        <p class="dirk typewriter-line4">We’re existing outside the realm of physicality.</p>
+        <p class="dirk typewriter-line5">Your existence, or more accurately, your sentience, is hinging on
+        <p class="dirk typewriter-line6">your neither conscious nor unconscious state at the moment. </p>
+    </a>
+    
+    <br>
+    <a id="send" href="#">==></a>
+    
+</body>
