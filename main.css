@@ -16,6 +16,7 @@
 p {
     font-size: 14px;
     font-family: lucida-grande;
+    line-height: 1.5;
 }
 
 .intro {
@@ -51,64 +52,9 @@ p {
     display: contents;
 }
 
-.dirk {
-    position: relative;
-    top: 50%;  
-    width: 480px;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%); 
-    line-height: 1.5;
-}
-
-.typewriter-line1 {
-    animation: typewriter 2s steps(65) .5s 1 normal both;
-}
-
-.typewriter-line2 {
-    animation: typewriter 2s steps(65) 1.5s 1 normal both;
-}
-
-.typewriter-line3 {
-    animation: typewriter 2s steps(65) 1.5s 1 normal both;
-}
-
-.typewriter-line4 {
-    animation: typewriter 2s steps(65) 3s 1 normal both;
-}
-
-.typewriter-line5 {
-    animation: typewriter 2s steps(65) 4.5s 1 normal both;
-}
-
-.typewriter-line6 {
-    animation: typewriter 2s steps(65) 6.25s 1 normal both;
-}
-
-@keyframes typewriter {
-    from {width: 0;}
-    to {width: 480px}
-}
-
 @media screen and (max-width: 600px) {
     p {
-        font-size: 11px;
-    }
-    
-    .tt p {
-        font-size: 14px;
-    }
-    
-    .dirk {
-        width: 300px;
-    }
-    
-    @keyframes typewriter {
-    from {width: 0;}
-    to {width: 300px}
+        font-size: 12px;
     }
 }
     

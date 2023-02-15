@@ -29,7 +29,7 @@
             
             if (clicks == 2) {
                 $("#tt2").toggleClass("show");
-                $("#dirk1").toggleClass("show"); 
+                typeWriter(); 
             }
             
             if (clicks == 3) {
@@ -38,19 +38,59 @@
             
             if (clicks == 4) {
                 $("#tt4").toggleClass("show");
-                $("#dirk2").toggleClass("show");
+                i = 0;
+                typeWriter();
             }
             
             if (clicks == 5) {
                 $("#tt5").toggleClass("show");
-                $("#dirk3").toggleClass("show");
+                i = 0;
+                typeWriter();
             }
         });
     });
-            
+        
+    var i = 0;
+    var dirk1 = 'I don’t know. You brought us here, you tell me.';
+    var dirk2 = 'You brought us here, you tell me.';
+    var dirk3 = 'Long answer or short answer?';
+    var dirk4 = 'As much as you want.';
+    var dirk5 = 'You’re not dead and you’re also not alive. We’re existing outside the realm of physicality. Your existence, or more accurately, your sentience, is hinging on your neither conscious or unconscious state at the moment.';
+    var dirk6 = 'The alternative narrative you proposed.';
+    var dirk7 = 'Due to an infinite amount of time and a finite amount of matter, yeah, dude. I don’t really think we need to rehash that.';
+    var dirk8 = 'You did.';
+    var dirk9 = 'Does that matter?';
+    var dirk10 = 'Jesus, you are one incongruent mother fucker. But I guess we both already knew that about ourselves.';
+    var dirk11 = 'But, goddamn. It sure as fuck does not make it any better having to talk to you.';
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (clicks == 2) {
+          if (i < dirk1.length) {
+            document.getElementById("dirk1-line").innerHTML += dirk1.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        
+        if (clicks == 4) {
+          if (i < dirk3.length) {
+            document.getElementById("dirk3-line").innerHTML += dirk3.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        
+        if (clicks == 5) {
+          if (i < dirk4.length) {
+            document.getElementById("dirk4-line").innerHTML += dirk4.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+    };
+        
     </script>
-    
-<!-- Dude, stop looking at my shitty code. -->
 
     <p class="intro">Press ==> to send your message.</p><br>
     
@@ -63,14 +103,10 @@
     <a id="tt2" class="hide">
         <div class="tt">
             <p>TT: What is this?<p>
-            <br>
         </div>
     </a>
     
-    <a id="dirk1" class="hide">
-        <p class="dirk typewriter-line1">I don’t know.</p>
-        <p class="dirk typewriter-line2">You brought us here. You tell me.</p>
-    </a>
+    <p id="dirk1-line"></p>
     
     <a id="tt3" class="hide">
         <div class="tt">
@@ -81,29 +117,19 @@
     <a id="tt4" class="hide">
         <div class="tt">
             <p>TT: Am I dead?<p>
-            <br>
         </div>
     </a>
     
-    <a id="dirk2" class="hide">
-        <p class="dirk typewriter-line1">Long answer or short answer?</p>
-    </a>
+    <p id="dirk3-line"></p>
     
     <a id="tt5" class="hide">
         <div class="tt">
             <p>TT: Depends. How much time do we have?<p>
-            <br>
         </div>
     </a>
     
-    <a id="dirk3" class="hide">
-        <p class="dirk typewriter-line3">You’re not dead and you’re also not alive.</p>
-        <p class="dirk typewriter-line4">We’re existing outside the realm of physicality.</p>
-        <p class="dirk typewriter-line5">Your existence, or more accurately, your sentience, is hinging on
-        <p class="dirk typewriter-line6">your neither conscious nor unconscious state at the moment. </p>
-    </a>
+    <p id="dirk4-line"></p>
     
-    <br>
     <a id="send" href="#">==></a>
     
 </body>
