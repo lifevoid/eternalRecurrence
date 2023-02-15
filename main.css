@@ -13,6 +13,10 @@
     src: url(Verdana.woff);
 }
 
+body {
+    display: inline;
+}
+
 p {
     font-size: 14px;
     font-family: lucida-grande;
@@ -95,7 +99,7 @@ p {
 
 @media screen and (max-width: 600px) {
     p {
-        font-size: 10px;
+        font-size: 11px;
     }
     
     .tt p {
