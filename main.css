@@ -48,7 +48,7 @@ p {
 }
 
 .show {
-    display: block;
+    display: inline;
 }
 
 .dirk {
@@ -91,5 +91,15 @@ p {
 @keyframes typewriter{
     from {width: 0;}
     to {width: 480px}
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 10px;
+    }
+    
+    .tt p {
+        font-size: 14px;
+    }
 }
     
