@@ -13,10 +13,6 @@
     src: url(Verdana.woff);
 }
 
-body {
-    display: inline;
-}
-
 p {
     font-size: 14px;
     font-family: lucida-grande;
@@ -52,7 +48,7 @@ p {
 }
 
 .show {
-    display: inline;
+    display: contents;
 }
 
 .dirk {
@@ -112,7 +108,7 @@ p {
     
     @keyframes typewriter {
     from {width: 0;}
-    to {width: 300px}
+    to {width: 480px}
     }
 }
     
