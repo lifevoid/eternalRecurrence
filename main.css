@@ -88,7 +88,7 @@ p {
     animation: typewriter 2s steps(65) 6.25s 1 normal both;
 }
 
-@keyframes typewriter{
+@keyframes typewriter {
     from {width: 0;}
     to {width: 480px}
 }
@@ -100,6 +100,15 @@ p {
     
     .tt p {
         font-size: 14px;
+    }
+    
+    .dirk {
+        width: 300px;
+    }
+    
+    @keyframes typewriter {
+    from {width: 0;}
+    to {width: 300px}
     }
 }
     
