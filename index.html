@@ -29,7 +29,7 @@
             
             if (clicks == 2) {
                 $("#tt2").toggleClass("show");
-                typeWriter(); 
+                setTimeout(typeWriter, 100);
             }
             
             if (clicks == 3) {
@@ -39,13 +39,41 @@
             if (clicks == 4) {
                 $("#tt4").toggleClass("show");
                 i = 0;
-                typeWriter();
+                setTimeout(typeWriter, 500);
             }
             
             if (clicks == 5) {
                 $("#tt5").toggleClass("show");
                 i = 0;
-                typeWriter();
+                setTimeout(typeWriter, 500);
+            }
+            
+            if (clicks == 6) {
+                $("#tt6").toggleClass("show");
+                i = 0;
+                setTimeout(typeWriter, 500);
+            }
+            
+            if (clicks == 7) {
+                $("#tt7").toggleClass("show");
+                i = 0;
+            }
+            
+            if (clicks == 8) {
+                $("#tt8").toggleClass("show");
+                i = 0;
+                setTimeout(typeWriter, 500);
+            }
+            
+            if (clicks == 9) {
+                $("#tt9").toggleClass("show");
+                i = 0;
+            }
+            
+            if (clicks == 10) {
+                $("#tt10").toggleClass("show");
+                i = 0;
+                setTimeout(typeWriter, 500);
             }
         });
     });
@@ -55,14 +83,14 @@
     var dirk2 = 'You brought us here, you tell me.';
     var dirk3 = 'Long answer or short answer?';
     var dirk4 = 'As much as you want.';
-    var dirk5 = 'You’re not dead and you’re also not alive. We’re existing outside the realm of physicality. Your existence, or more accurately, your sentience, is hinging on your neither conscious or unconscious state at the moment.';
+    var dirk5 = 'You’re not dead and you’re also not alive. We’re existing outside the realm of physicality. Your existence, or more accurately, your sentience, is hinging on your neither conscious nor unconscious state at the moment.';
     var dirk6 = 'The alternative narrative you proposed.';
     var dirk7 = 'Due to an infinite amount of time and a finite amount of matter, yeah, dude. I don’t really think we need to rehash that.';
     var dirk8 = 'You did.';
     var dirk9 = 'Does that matter?';
     var dirk10 = 'Jesus, you are one incongruent mother fucker. But I guess we both already knew that about ourselves.';
     var dirk11 = 'But, goddamn. It sure as fuck does not make it any better having to talk to you.';
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    var speed = 50;
 
     function typeWriter() {
         if (clicks == 2) {
@@ -88,6 +116,23 @@
             setTimeout(typeWriter, speed);
           }
         }
+        
+        if (clicks == 6) {
+          if (i < dirk5.length) {
+            document.getElementById("dirk5-line").innerHTML += dirk5.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }      
+        }
+        
+        if (clicks == 8) {
+          if (i < dirk6.length) {
+            document.getElementById("dirk6-line").innerHTML += dirk6.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }      
+        }
+        
     };
         
     </script>
@@ -129,6 +174,42 @@
     </a>
     
     <p id="dirk4-line"></p>
+    
+    <a id="tt6" class="hide">
+        <div class="tt">
+            <p>TT: Ok. Long answer.<p>
+        </div>
+    </a>
+    
+    <p id="dirk5-line"></p>
+    
+    <a id="tt7" class="hide">
+        <div class="tt">
+            <p>TT: Great.<p>
+        </div>
+    </a>
+    
+    <a id="tt8" class="hide">
+        <div class="tt">
+            <p>TT: What the fuck are we looking at?<p>
+        </div>
+    </a>
+    
+    <p id="dirk6-line"></p>
+    
+    <a id="tt9" class="hide">
+        <div class="tt">
+            <p>TT: What?<p>
+        </div>
+    </a>
+    
+    <a id="tt10" class="hide">
+        <div class="tt">
+            <p>TT: I thought we just established through a really long and tonally jarring aside that this is supposed to be taking place in some timeline existing in a string of infinite loops.<p>
+        </div>
+    </a>
+    
+    <p id="dirk7-line"></p>
     
     <a id="send" href="#">==></a>
     
