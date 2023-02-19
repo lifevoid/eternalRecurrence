@@ -14,12 +14,16 @@
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     font-family: lucida-grande;
     line-height: 1.5;
 }
 
-.intro {
+#intro {
+    text-align: center;
+}
+
+#closing {
     text-align: center;
 }
 
@@ -42,6 +46,7 @@ p {
     font-family: verdana;
     color: blue;
     font-size: 20px;
+    text-decoration: underline;
 }
 
 .hide {
@@ -52,9 +57,14 @@ p {
     display: contents;
 }
 
+.closing {
+    display: block;
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
     

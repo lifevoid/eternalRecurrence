@@ -17,6 +17,7 @@
     <script>
         
     var clicks = 0;
+    var finalLine = false;
         
     // ==> click
     $(function() {
@@ -29,7 +30,7 @@
             
             if (clicks == 2) {
                 $("#tt2").toggleClass("show");
-                setTimeout(typeWriter, 100);
+                setTimeout(typeWriter, 500);
             }
             
             if (clicks == 3) {
@@ -56,7 +57,6 @@
             
             if (clicks == 7) {
                 $("#tt7").toggleClass("show");
-                i = 0;
             }
             
             if (clicks == 8) {
@@ -67,7 +67,6 @@
             
             if (clicks == 9) {
                 $("#tt9").toggleClass("show");
-                i = 0;
             }
             
             if (clicks == 10) {
@@ -75,10 +74,59 @@
                 i = 0;
                 setTimeout(typeWriter, 500);
             }
+            
+            if (clicks == 11) {
+                $("#tt11").toggleClass("show");
+            }
+            
+            if (clicks == 12) {
+                $("#tt12").toggleClass("show");
+                i = 0;
+                setTimeout(typeWriter, 500);
+            }
+            
+            if (clicks == 13) {
+                $("#tt13").toggleClass("show"); // So did it happen or not?
+                i = 0;
+                setTimeout(typeWriter, 500); //Does that matter?
+            }
+            
+            if (clicks == 14) {
+                $("#tt14").toggleClass("show"); // For the sake of clarity and not being an obtuse fucking douchebag, yes.
+                i = 0;
+                setTimeout(typeWriter, 500); // Jesus, you are one incongruent mother fucker. But I guess we both already knew that about ourselves. But, goddamn. It sure as fuck does not make it any better having to talk to you. 
+            }
+            
+            if (clicks == 15) {
+                $("#tt15").toggleClass("show");
+            }
+            
+            if (clicks == 16) {
+                $("#tt16").toggleClass("show");
+            }
+            
+            if (clicks == 17) {
+                $("#tt17").toggleClass("show"); // Charles Dickens
+                i = 0;
+                setTimeout(typeWriter, 500); // That's up to you, dog.
+            }
+            
+            if (clicks == 18) {
+                $("#tt18").toggleClass("show"); // And when does it stop?
+                i = 0;
+                setTimeout(typeWriter, 500); // When you've seen enough.
+                finalLine = true;
+            }
+            
+            if (clicks == 19) {
+                $("#closing").toggleClass("closing");
+                $("#send").toggleClass("hide");
+            }
         });
     });
         
     var i = 0;
+    var k = 0;
     var dirk1 = 'I don’t know. You brought us here, you tell me.';
     var dirk2 = 'You brought us here, you tell me.';
     var dirk3 = 'Long answer or short answer?';
@@ -88,8 +136,10 @@
     var dirk7 = 'Due to an infinite amount of time and a finite amount of matter, yeah, dude. I don’t really think we need to rehash that.';
     var dirk8 = 'You did.';
     var dirk9 = 'Does that matter?';
-    var dirk10 = 'Jesus, you are one incongruent mother fucker. But I guess we both already knew that about ourselves.';
-    var dirk11 = 'But, goddamn. It sure as fuck does not make it any better having to talk to you.';
+    var dirk10 = 'Jesus, you are one incongruent motherfucker. But I guess we both already knew that about ourselves. Even so, goddamn. It sure as fuck does not make it any better having to talk to you.';
+    var dirk11 = 'That’s up to you, dog. You’re the one putting yourself up to this.';
+    var dirk12 = 'When you’ve seen enough. I can’t tell you when that will be, only you can. Not really sure how many times I have to drive this tired ass point home, dude.';
+    var dirk13 = 'I’m not the one pulling the strings here.';
     var speed = 50;
 
     function typeWriter() {
@@ -133,11 +183,69 @@
           }      
         }
         
+        if (clicks == 10) {
+          if (i < dirk7.length) {
+            document.getElementById("dirk7-line").innerHTML += dirk7.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }  
+        }
+        
+        if (clicks == 12) {
+          if (i < dirk8.length) {
+            document.getElementById("dirk8-line").innerHTML += dirk8.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }    
+        }
+        
+        if (clicks == 13) {
+          if (i < dirk9.length) {
+            document.getElementById("dirk9-line").innerHTML += dirk9.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }    
+        }
+        
+        if (clicks == 14) {
+          if (i < dirk10.length) {
+            document.getElementById("dirk10-line").innerHTML += dirk10.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }    
+        }
+        
+        if (clicks == 17) {
+          if (i < dirk11.length) {
+            document.getElementById("dirk11-line").innerHTML += dirk11.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }    
+        }
+        
+        if (clicks == 18) {
+          if (i < dirk12.length) {
+            document.getElementById("dirk12-line").innerHTML += dirk12.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }    
+        }
+        
+        if (finalLine == true) {
+            if (i == dirk12.length) {
+                if (k < dirk13.length) {
+                    document.getElementById("dirk13-line").innerHTML += dirk13.charAt(k);
+                    k++;
+                    setTimeout(typeWriter, 100);        
+            }
+          }    
+        }
+        
     };
         
     </script>
 
-    <p class="intro">Press ==> to send your message.</p><br>
+    <p id="intro">Press ==> to send your message.</p><br>
     
     <a id="tt1" class="hide">
         <div class="tt">
@@ -211,6 +319,69 @@
     
     <p id="dirk7-line"></p>
     
+    <a id="tt11" class="hide">
+        <div class="tt">
+            <p>TT: So which is it?<p>
+        </div>
+    </a>
+    
+    <a id="tt12" class="hide">
+        <div class="tt">
+            <p>TT: You said I “proposed” this.<p>
+        </div>
+    </a>
+    
+    <p id="dirk8-line"></p>
+    
+    <a id="tt13" class="hide">
+        <div class="tt">
+            <p>TT: So did it happen or not?<p>
+        </div>
+    </a>
+    
+    <p id="dirk9-line"></p>
+    
+    <a id="tt14" class="hide">
+        <div class="tt">
+            <p>TT: For the sake of clarity and not being an obtuse fucking douchebag, yes.<p>
+        </div>
+    </a>
+    
+    <p id="dirk10-line"></p>
+    
+    <a id="tt15" class="hide">
+        <div class="tt">
+            <p>TT: Fine. Forget I asked.<p>
+        </div>
+    </a>
+    
+    
+    <a id="tt16" class="hide">
+        <div class="tt">
+            <p>TT: So… am I just supposed to observe whatever’s going on in front of me for all of eternity?<p>
+        </div>
+    </a>
+    
+    <a id="tt17" class="hide">
+        <div class="tt">
+            <p>TT: Like some omniscient, fuckin’ Charles Dicken’s holiday fairytale?<p>
+        </div>
+    </a>
+    
+    <p id="dirk11-line"></p>
+    
+    <a id="tt18" class="hide">
+        <div class="tt">
+            <p>TT: And when does it stop?<p>
+        </div>
+    </a>
+    
+    <p id="dirk12-line"></p>
+    
+    <p id="dirk13-line"></p>
+    
     <a id="send" href="#">==></a>
+    
+    <p id="closing" class="hide">Return to the work to continue.</p>
     
 </body>
