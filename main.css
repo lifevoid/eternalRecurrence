@@ -1,21 +1,21 @@
 @font-face {
-    font-family: lucida-grande;
+    font-family: lucida-grande, sans-serif;
     src: url(LucidaGrande.woff);
 }
 
 @font-face {
-    font-family: courier;
+    font-family: courier, monospace;
     src: url(CourierNewBold.woff);
 }
 
 @font-face {
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     src: url(Verdana.woff);
 }
 
 p {
     font-size: 15px;
-    font-family: lucida-grande;
+    font-family: lucida-grande, sans-serif;
     line-height: 1.5;
 }
 
@@ -30,20 +30,20 @@ p {
 .tt p {
     font-size: 14px;
     font-weight: bold;
-    font-family: courier;
+    font-family: courier, monospace;
     color: #f2a400;
     margin: 0;
     line-height: 1.5;
 }
 
 .arrow {
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     color: blue;
     font-size: 20px;
 }
 
 #send {
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     color: blue;
     font-size: 20px;
     text-decoration: underline;
