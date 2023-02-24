@@ -1,5 +1,5 @@
 @font-face {
-    font-family: lucida-grande, sans-serif;
+    font-family: lucida-grande;
     src: url(LucidaGrande.woff);
 }
 
@@ -9,13 +9,13 @@
 }
 
 @font-face {
-    font-family: verdana, sans-serif;
+    font-family: verdana;
     src: url(Verdana.woff);
 }
 
 p {
     font-size: 15px;
-    font-family: lucida-grande, sans-serif;
+    font-family: lucida-grande;
     line-height: 1.5;
 }
 
@@ -37,13 +37,13 @@ p {
 }
 
 .arrow {
-    font-family: verdana, sans-serif;
+    font-family: verdana;
     color: blue;
     font-size: 20px;
 }
 
 #send {
-    font-family: verdana, sans-serif;
+    font-family: verdana;
     color: blue;
     font-size: 20px;
     text-decoration: underline;
